@@ -298,8 +298,8 @@ Special thanks to the Digital Humanities community for inspiration and feedback.
 ## 📧 Contact
 
 For questions, collaborations, or feedback:
-- **Email:** [av.el3@yandex.com]
-- **ResearchGate:** [https://www.researchgate.net/profile/Elena-Avraham]
+- **Email:** av.el3@yandex.com
+- **ResearchGate:** https://www.researchgate.net/profile/Elena-Avraham
 - **Issues:** [GitHub Issues](https://github.com/yourusername/sefer-yetzirah-semantic-analysis/issues)
 
 ---
