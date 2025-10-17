@@ -9,7 +9,7 @@ Computational methodology for semantic text analysis based on the symbolic struc
 ## 📄 Publication
 
 **Paper:** *Semantic Analysis in the Context of Jewish Theology and the Symbolism of the Kabbalistic Treatise Sefer Yetzirah*  
-**DOI:** [10.5281/zenodo.17373232](  https://doi.org/10.5281/zenodo.17375947)  
+**DOI:** [10.5281/zenodo.17375947](https://doi.org/10.5281/zenodo.17375947)  
 **Keywords:** Judaism, Kabbalah, Sefer Yetzirah, Digital Humanities, Computational Linguistics, Graph Theory
 
 ## 🎯 Overview
