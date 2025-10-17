@@ -2,14 +2,14 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17373232.svg)](https://doi.org/10.5281/zenodo.17373232)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17375947.svg)](https://doi.org/10.5281/zenodo.17375947)
 
 Computational methodology for semantic text analysis based on the symbolic structure of the ancient Hebrew Kabbalistic treatise *Sefer Yetzirah*. This approach formalizes the sefirot-letter system as a weighted directed graph and applies spectral analysis to identify semantic patterns in Hebrew texts.
 
 ## 📄 Publication
 
 **Paper:** *Semantic Analysis in the Context of Jewish Theology and the Symbolism of the Kabbalistic Treatise Sefer Yetzirah*  
-**DOI:** [10.5281/zenodo.17373232](https://doi.org/10.5281/zenodo.17373232)  
+**DOI:** [10.5281/zenodo.17373232](  https://doi.org/10.5281/zenodo.17375947)  
 **Keywords:** Judaism, Kabbalah, Sefer Yetzirah, Digital Humanities, Computational Linguistics, Graph Theory
 
 ## 🎯 Overview
@@ -264,7 +264,7 @@ If you use this code in your research, please cite:
   year={2025},
   publisher={Zenodo},
   doi={10.5281/zenodo.17373232},
-  url={https://doi.org/10.5281/zenodo.17373232}
+  url={  https://doi.org/10.5281/zenodo.17375947}
 }
 ```
 
@@ -272,7 +272,7 @@ If you use this code in your research, please cite:
 ```
 [Your Name]. (2025). Semantic Analysis in the Context of Jewish Theology 
 and the Symbolism of the Kabbalistic Treatise Sefer Yetzirah. Zenodo. 
-https://doi.org/10.5281/zenodo.17373232
+  https://doi.org/10.5281/zenodo.17375947
 ```
 
 ## 📄 License
