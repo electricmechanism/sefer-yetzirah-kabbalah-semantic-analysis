@@ -23,7 +23,7 @@ This repository contains the implementation of a novel semantic analysis method 
 2. **Analyzes** Hebrew texts by:
    - Building text-specific graphs based on letter frequencies
    - Applying **spectral clustering** to identify semantic phases
-   - Using **TF-IDF normalization** to suppress structural artifacts
+   - Using **Semantic Specificity normalization** to suppress structural artifacts
 
 3. **Interprets** results through the lens of Kabbalistic tradition, providing a bridge between computational methods and hermeneutic analysis.
 
@@ -31,7 +31,7 @@ This repository contains the implementation of a novel semantic analysis method 
 
 - ✅ **Graph-based semantic model** rooted in Sefer Yetzirah
 - ✅ **Spectral analysis** for text segmentation
-- ✅ **TF-IDF weighting** to identify text-specific patterns
+- ✅ **Semantic Specificity weighting** to identify text-specific patterns
 - ✅ **Reproducible** analysis pipeline
 - ✅ **Visualization** tools for graph structures and semantic phases
 
@@ -50,7 +50,7 @@ text = """
 # Build graph
 G = build_sephirot_graph(letter_to_sfirot, sfirot, text=text, method="log")
 
-# Analyze with TF-IDF
+# Analyze with Semantic Specificity
 baseline_activity = compute_baseline_activity(letter_to_sfirot, sfirot, [text])
 top_sfirot = get_top_sfirot_tfidf(G, sfirot, baseline_activity, top_n=3)
 
