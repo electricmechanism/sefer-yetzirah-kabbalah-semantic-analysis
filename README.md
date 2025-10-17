@@ -2,14 +2,14 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17375947.svg)](https://doi.org/10.5281/zenodo.17375947)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17378184.svg)](https://doi.org/10.5281/zenodo.17378184)
 
 Computational methodology for semantic text analysis based on the symbolic structure of the ancient Hebrew Kabbalistic treatise *Sefer Yetzirah*. This approach formalizes the sefirot-letter system as a weighted directed graph and applies spectral analysis to identify semantic patterns in Hebrew texts.
 
 ## 📄 Publication
 
 **Paper:** *Semantic Analysis in the Context of Jewish Theology and the Symbolism of the Kabbalistic Treatise Sefer Yetzirah*  
-**DOI:** [10.5281/zenodo.17375947](https://doi.org/10.5281/zenodo.17375947)  
+**DOI:** [10.5281/zenodo.17373232](  https://doi.org/10.5281/zenodo.17378184)  
 **Keywords:** Judaism, Kabbalah, Sefer Yetzirah, Digital Humanities, Computational Linguistics, Graph Theory
 
 ## 🎯 Overview
@@ -23,7 +23,7 @@ This repository contains the implementation of a novel semantic analysis method 
 2. **Analyzes** Hebrew texts by:
    - Building text-specific graphs based on letter frequencies
    - Applying **spectral clustering** to identify semantic phases
-   - Using **Semantic Specificity normalization** to suppress structural artifacts
+   - Using **TF-IDF normalization** to suppress structural artifacts
 
 3. **Interprets** results through the lens of Kabbalistic tradition, providing a bridge between computational methods and hermeneutic analysis.
 
@@ -31,7 +31,7 @@ This repository contains the implementation of a novel semantic analysis method 
 
 - ✅ **Graph-based semantic model** rooted in Sefer Yetzirah
 - ✅ **Spectral analysis** for text segmentation
-- ✅ **Semantic Specificity weighting** to identify text-specific patterns
+- ✅ **TF-IDF weighting** to identify text-specific patterns
 - ✅ **Reproducible** analysis pipeline
 - ✅ **Visualization** tools for graph structures and semantic phases
 
@@ -50,7 +50,7 @@ text = """
 # Build graph
 G = build_sephirot_graph(letter_to_sfirot, sfirot, text=text, method="log")
 
-# Analyze with Semantic Specificity
+# Analyze with TF-IDF
 baseline_activity = compute_baseline_activity(letter_to_sfirot, sfirot, [text])
 top_sfirot = get_top_sfirot_tfidf(G, sfirot, baseline_activity, top_n=3)
 
@@ -138,11 +138,17 @@ Semantic Phase Identification
 Interpretation via Kabbalistic Framework
 ```
 
-### 3. Semantic Specificity
+### 3. TF-IDF for Semantic Specificity
 
-To suppress structural artifacts (e.g., centrally positioned sefirot dominating all texts), we apply Semantic Specificit.
+To suppress structural artifacts (e.g., centrally positioned sefirot dominating all texts), we apply:
 
-To identify sefirot with anomalous activity in specific semantic phases, a specificity metric based on normalization relative to a baseline distribution was developed. Baseline Activity. For each sefirot s, its baseline activity Baseline(s) was calculated across the entire analyzed text.
+**TF-IDF(s, p) = TF(s, p) × IDF(s)**
+
+Where:
+- **TF(s, p)** = activity of sefira *s* in phase *p* (normalized by total activity)
+- **IDF(s)** = inverse of baseline frequency of *s* across corpus
+
+This highlights sefirot that are **anomalously active** for specific text segments.
 
 ## 📊 Example: Psalm 119 Analysis
 
@@ -258,7 +264,7 @@ If you use this code in your research, please cite:
   year={2025},
   publisher={Zenodo},
   doi={10.5281/zenodo.17373232},
-  url={  https://doi.org/10.5281/zenodo.17375947}
+  url={  https://doi.org/10.5281/zenodo.17378184}
 }
 ```
 
@@ -266,7 +272,7 @@ If you use this code in your research, please cite:
 ```
 [Your Name]. (2025). Semantic Analysis in the Context of Jewish Theology 
 and the Symbolism of the Kabbalistic Treatise Sefer Yetzirah. Zenodo. 
-  https://doi.org/10.5281/zenodo.17375947
+  https://doi.org/10.5281/zenodo.17378184
 ```
 
 ## 📄 License
